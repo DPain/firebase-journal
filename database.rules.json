@@ -1,0 +1,16 @@
+{
+  "rules": {
+    "post_count": {
+      ".read": "true",
+      ".write": "auth.token.email === 'd.pain.coreymu@gmail.com'"
+    },
+    "posts": {
+      ".read": "true",
+      ".write": "auth.token.email === 'd.pain.coreymu@gmail.com'"
+    },
+    "visitor_count": {
+      ".read": "true",
+      ".write": "true"
+    }
+  }
+}

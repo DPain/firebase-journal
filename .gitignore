@@ -1,0 +1,10 @@
+.firebaserc
+.project
+/.settings/
+/public/*.png
+/public/*.xml
+/public/*.txt
+/public/*.ico
+/public/*.svg
+/public/*.webmanifest
+/public/firebase_init.js

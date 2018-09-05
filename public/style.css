@@ -1,0 +1,58 @@
+body {
+    background-color: black;
+}
+
+.mdl-layout__content {
+    padding-top: 100px;
+    overflow: visible;
+}
+
+.content-grid {
+    max-width: 900px;
+    width: auto;
+    display: flex;
+}
+
+.mdl-card__title {
+    background-color: rgba(0, 0, 0, 0.8);
+    color: #c6c6c6;
+}
+
+.mdl-card__supporting-text {
+    background-color: rgba(0, 0, 0, 0.8);
+    color: #c6c6c6;
+    width: auto;
+}
+
+.mdl-card.responsive {
+    min-width: 200px;
+    min-height: 360px;
+    overflow: visible;
+}
+
+.card-body {
+    flex-grow: 1;
+    border-top: 1px solid rgba(0, 0, 0, .2);
+    border-bottom: 1px solid rgba(0, 0, 0, .2);
+}
+
+h1, h2, h3, h4, h5, h6 {
+    margin: 0px;
+}
+
+.mdl-card p {
+    margin: 0px;
+    word-wrap: break-word;
+}
+
+.mdl-mini-footer {
+    margin-top: 40px;
+    padding-top: 40px;
+    padding-left: 40px;
+    padding-right: 40px;
+    padding-bottom: 60px;
+}
+
+textarea#body {
+    min-height: 100px;
+}

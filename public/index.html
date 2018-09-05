@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>My Title!</title>
+
+<link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">
+<link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
+<link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png">
+<link rel="manifest" href="/site.webmanifest">
+<link rel="mask-icon" href="/safari-pinned-tab.svg" color="#5bbad5">
+<meta name="msapplication-TileColor" content="#da532c">
+<meta name="theme-color" content="#ffffff">
+
+<script src="https://www.gstatic.com/firebasejs/5.0.0/firebase-app.js"></script>
+<!-- include only the Firebase features as you need -->
+<script src="https://www.gstatic.com/firebasejs/5.0.0/firebase-auth.js"></script>
+<script src="https://www.gstatic.com/firebasejs/5.0.0/firebase-database.js"></script>
+<!-- initialize the SDK after all desired features are loaded -->
+<script src="firebase_init.js"></script>
+
+<link rel="stylesheet" type="text/css" href="dialog-polyfill.css" />
+
+<link rel="stylesheet" href="https://code.getmdl.io/1.3.0/material.grey-red.min.css" />
+<link rel="stylesheet" href="style.css" />
+<link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
+
+<script src="https://code.getmdl.io/1.3.0/material.min.js"></script>
+</head>
+<body>
+    <div class="mdl-layout mdl-js-layout">
+        <div class="mdl-layout__content">
+            <div id="posts" class="content-grid mdl-grid">
+                <!-- Example Post
+        				<div
+        					class="mdl-card mdl-cell mdl-cell--4-col mdl-cell--4-col-tablet mdl-cell--4-col-phone responsive">
+        					<div class="mdl-card__title">
+        						<h4>Test</h4>
+        					</div>
+        					<div class="mdl-card__supporting-text card-body">
+        						<p>Body</p>
+        					</div>
+        					<div class="mdl-card__supporting-text">
+        						<p>7/1/2018</p>
+        					</div>
+        				</div>
+        				 -->
+            </div>
+            <div id="nav-buttons" class="content-grid mdl-grid">
+                <div class="mdl-layout-spacer"></div>
+                    <button id="previous_btn" class="mdl-cell mdl-cell--2-col mdl-button mdl-button--raised mdl-js-button mdl-js-ripple-effect mdl-color-text--grey-50">
+                        Newer
+                    </button>
+                    <button id="next_btn" class="mdl-cell mdl-cell--2-col mdl-button mdl-button--raised mdl-js-button mdl-js-ripple-effect mdl-color-text--grey-50">
+                        Older
+                    </button>
+            </div>
+        </div>
+        <footer class="mdl-mini-footer">
+            <div class="mdl-mini-footer__right-section">
+                <button id="post_btn" class="mdl-button mdl-button--raised mdl-js-button mdl-color-text--grey-50">
+                    Post
+                </button>
+                <button id="login_btn" class="mdl-button mdl-button--raised mdl-js-button mdl-color-text--grey-50">
+                    Login
+                </button>
+            </div>
+        </footer>
+    </div>
+    <script src="dialog-polyfill.js"></script>
+    <script src="retrieve_firebase_post.js"></script>
+    <script src="firebase_login_post.js"></script>
+</body>
+</html>
